@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Form</title>
+</head> 
+<body>
+    <form action="/submit" method="post">
+        <label for="username">userName:</label>
+        <input type="text" id="=username" name="username" required placeholder="Enter your username"><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required placeholder="Enter your password"><br><br>
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required placeholder="Enter your email"><br><br>
+
+        <label for="phoneno">Phone:</label>
+        <input type="tel" id="phoneno" name="phoneno" required placeholder="012-345-6789"pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br><br>
+
+        <label for="dob">DOB:</label>
+        <input type="date" id="dob"> <br><br>
+
+        <label for="gender">Gender:</label>
+        <input type="radio" id="gender" name="gender" value="Male" required>
+        <label for="male">Male</label>
+        <input type="radio" id="gender" name="gender" value="Female" required>
+        <label for="female">Female</label>
+        <input type="radio" id="gender" name="gender" value="Custom" required>
+        <label for="custom">Custom</label><br><br>
+
+        <label for="payment">Payment:</label>
+        <select id="payment">
+            <option value="default">Pay On</option>
+            <option value="bKash">bKash</option>
+            <option value="Nagad">Nagad</option>
+            <option value="Card">Card</option>
+        </select><br><br>
+
+        <input type="checkbox" id="subscribe">
+        <label for="subscribe">Subscreibe: </label> <br>
+        <input type="checkbox" id="unsubscreibe">
+        <label for="unsubscribe">Unsubscreibe: </label> <br> <br>
+
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+        <input type="submit" value="Register">
+
+
+    </form>
+</body>  
+</html>
