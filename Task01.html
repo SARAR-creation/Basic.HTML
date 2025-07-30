@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AIUB</title>
+    <link rel="icon" type="image/png" href="https://upload.wikimedia.org/wikipedia/en/thumb/8/8c/American_International_University-Bangladesh_Monogram.svg/1200px-American_International_University-Bangladesh_Monogram.svg.png">
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            
+            background: linear-gradient(to right, #add8e6, #ffc0cb);
+        }
+        h1{
+            text-align: center;
+        }
+        .form-group {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .form-group label {
+            width: 150px;
+            margin-right: 10px;
+        }
+        .form-group input, 
+        .form-group select, 
+        .form-group textarea {
+            flex: 1;
+            padding: 5px;
+        }
+        .form-group input [type="radio"],
+        .form-group input [type="checkbox"] {
+            flex: unset;
+            margin-left: 5px;
+        }
+        .form-submit {
+            text-align: center;
+            margin-top: 10px;
+        }
+        .form-submit input [type="submit"] {
+            padding: 8px 20px;
+        }
+    </style>
+    
+</head>
+<body>
+    <h1>Student Registration Form</h1>
+
+    <form action="/submit" method="post">
+
+        <div class="form-group">
+            <label for="rollno">Roll no: </label>
+            <input type="text" id="=rollno" name="rollno"><br><br>
+        </div>
+
+        <div class="form-group">
+            <label for="studentname">Student name: </label>
+            <input type="text" id="=studentname" name="studentname" required placeholder="First Name">
+            <label for="dot">-</label>
+            <input type="text" id="=studentname" name="studentname" required placeholder="Last Name"><br><br>
+        </div>
+        
+
+        <div class="form-group">
+            <label for="fathersname">Father's name: </label>
+            <input type="text" id="=fathersname" name="fathersname" required><br><br>
+        </div>
+
+
+        <div class="form-group">
+            <label for="dob">Date of birth: </label>
+            <input type="date" id="dob"><br><br>
+        </div>
+
+
+        <div class="form-group">
+            <label for="mobileno">Mobile no: </label>
+            <input type="tel" id="mobileno" name="mobileno" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br><br>
+        </div>
+
+
+        <div class="form-group">
+            <label for="emailid">Email id: </label>
+            <input type="emailid" id="emailid" name="emailid"><br><br>
+        </div>
+
+
+        <div class="form-group">
+            <label for="password">Password: </label>
+            <input type="password" id="password" name="password"><br><br>
+        </div>
+
+
+        <div class="form-group">
+            <label for="gender">Gender: </label>
+            <input type="radio" id="gender" name="gender" value="Male" required>
+            <label for="male">Male</label>
+            <input type="radio" id="gender" name="gender" value="Female" required>
+            <label for="female">Female</label><br><br>
+        </div>
+
+
+        <div class="form-group">
+            <label for="department">Department: </label>
+            <input type="checkbox" id="cse">
+            <label for="cse">CSE </label>
+            <input type="checkbox" id="it">
+            <label for="it">IT </label>
+            <input type="checkbox" id="ece">
+            <label for="ece">ECE </label>
+            <input type="checkbox" id="civil">
+            <label for="civil">Civil </label>
+            <input type="checkbox" id="mech">
+            <label for="mech">Mech </label> <br> <br>
+        </div>
+
+
+        <div class="form-group">
+            <label for="courses">Courses: </label>
+            <select id="cources">
+                <option value="default">Select Current Course's</option>
+                <option value="software">SOFTWARE ENGINEERING </option>
+                <option value="datacom">DATA COMMUNICATION </option>
+                <option value="web">WEB TECHNOLOGY </option>
+                <option value="micro">MICROPROCESSOR AND EMBEDDED SYSTEMS </option>
+            </select><br><br>
+        </div>
+
+
+        <div class="form-group">
+            <label for="studentphoto">Student photo: </label>
+            <input type="file" id="studentphoto" name="studentphoto"><br><br>
+        </div>
+
+
+        <div class="form-group">
+            <label for="city">City: </label>
+            <input type="text" id="city" name="city"><br><br>
+        </div>
+
+
+        <div class="form-group">
+            <label for="address">Address: </label>
+            <textarea id="address" name="address" rows="3"></textarea><br><br>
+        </div>
+
+
+        <div class="form-submit">
+            <input type="submit" value="Register"><br><br>
+        </div>
+
+
+
+    </form>
+    
+</body>
+</html>
